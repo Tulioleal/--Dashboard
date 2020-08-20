@@ -1,0 +1,67 @@
+main{
+    width: 80%;
+
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    article{
+
+        margin-bottom: 2em;
+        margin-top: 2em;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    article:first-child{
+    
+        section{
+            height: 15em;
+            width: 23%;
+            background-color: gray;
+            border-top: 5px solid black;
+            border-radius: 5px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            div:first-child{
+                
+                align-self: center;
+            }
+            div:nth-child(2){
+
+                align-self: center;
+
+                span{
+                    font-size: 4em;
+                }
+                p{
+                    text-align: center;
+                }
+
+            }
+            div:nth-child(3){
+                align-self: center;
+            }
+        }
+    }
+
+    article:nth-child(2){
+
+        flex-direction: column;
+        justify-content: space-between;
+
+        h3{
+
+        }
+        div{
+
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+}
