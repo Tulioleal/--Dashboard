@@ -1,5 +1,5 @@
 header{
-    height: 20%;
+    height: 15%;
     width: 80%;
 
     align-self: center;
@@ -10,11 +10,8 @@ header{
     div:first-child{
 
         align-self: center;
-        h2{
-
-        }
         p{
-
+            color: $azulGO;
         }
     }
     .none{
@@ -26,6 +23,8 @@ header{
         align-self: center;
 
         span{
+            @include font_size;
+            color: $azulGO;
             margin-right: 1em;
             align-self: center;
         }
@@ -34,7 +33,7 @@ header{
             width: 4em;
             border-radius: 30px;
             border: none;
-
+            // background-image: ;
             align-self: center;
         }
         button::after{

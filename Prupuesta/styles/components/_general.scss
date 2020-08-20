@@ -1,0 +1,58 @@
+@import'variables';
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    height: 100vh;
+    background-color: $blancoLT;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &::before{
+        content: '';
+        width: 100%;
+        height: 30%;
+        position: absolute;
+        background-color: $azulMP;
+        z-index: -1;
+    }
+    .row{
+        width: 100%;
+    }
+    .red{
+        color: $rojoB;
+    }
+    .green{
+        color: $verdeL;
+    }
+    .facebook{ 
+        &::before{
+            background-color: $facebook;
+        }
+    }
+    .instagram{
+        &::before{
+            background-image: $instagram;
+        }
+    }
+    .twitter{
+        &::before{
+            background-color: $twitter;
+        }
+        
+    }
+    .youtube{
+        &::before{
+            background-color: $youtube;
+        }
+        
+    }
+}
