@@ -1,23 +1,23 @@
 main{
+    height: 80%;
     width: 80%;
 
     align-self: center;
 
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     article{
-
-        margin-bottom: 2em;
-        margin-top: 2em;
 
         display: flex;
         justify-content: space-between;
     }
 
     article:first-child{
+        height: 40%;
     
         section{
-            height: 15em;
+            height: 90%;
             width: 23%;
             background-color: gray;
             border-top: 5px solid black;
@@ -50,9 +50,10 @@ main{
     }
 
     article:nth-child(2){
+        height: 60%;
 
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
 
         h3{
 
