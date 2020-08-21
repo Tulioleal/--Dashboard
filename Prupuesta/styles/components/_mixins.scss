@@ -1,3 +1,11 @@
 @mixin font_size{
     font-size: 14px;
 }
+
+@mixin hover_card{
+    &:hover{
+        background-color: $toggleL;
+        cursor: pointer;
+        filter: brightness(117%) grayscale(20%) saturate(80%);
+    }
+}

@@ -1,14 +1,14 @@
+@import'../components/variables';
+
 header{
     height: 15%;
     width: 80%;
 
     align-self: center;
-
     display: flex;
     justify-content: space-between;
 
     div:first-child{
-
         align-self: center;
         p{
             color: $azulGO;
@@ -33,16 +33,17 @@ header{
             width: 4em;
             border-radius: 30px;
             border: none;
-            // background-image: ;
+            background-image: $toggleD;
             align-self: center;
-        }
-        button::after{
-            content: '';
-            background-color: black;
-            height: 5px;
-            width: 5px;
-            border-radius: 50%;
 
+            &::after{
+                content: '';
+                background-color: black;
+                height: 5px;
+                width: 5px;
+                border-radius: 50%;
+    
+            }
         }
     }
 }

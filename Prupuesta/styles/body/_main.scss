@@ -23,9 +23,12 @@ main{
             background-color: $azulGC;
             border-radius: 5px;
 
+            align-self: center;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @include hover_card();
 
             &::before{
                 content: '';
@@ -38,6 +41,10 @@ main{
             div:first-child{
                 @include font-size();
                 align-self: center;
+
+                span{
+                    color: $azulGO;
+                }
 
             }
             div:nth-child(2){
@@ -95,6 +102,7 @@ main{
                 width: 23%;
                 border-radius: 5px;
                 background-color: $azulGC;
+                @include hover_card();
 
                 display: flex;
                 flex-direction: column;

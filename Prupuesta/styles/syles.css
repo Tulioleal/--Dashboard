@@ -8,6 +8,7 @@
 body {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
+  color: #1e202a;
   height: 100vh;
   background-color: white;
   display: -webkit-box;
@@ -109,6 +110,8 @@ header div:nth-child(n+2) button {
   width: 4em;
   border-radius: 30px;
   border: none;
+  background-image: -webkit-gradient(linear, right #378fe6, from(#3eda82));
+  background-image: linear-gradient(to right #378fe6, #3eda82);
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -158,6 +161,8 @@ main article:first-child .cardLg {
   padding-bottom: 3%;
   background-color: #f0f2fa;
   border-radius: 5px;
+  -ms-flex-item-align: center;
+      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,6 +173,13 @@ main article:first-child .cardLg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+main article:first-child .cardLg:hover {
+  background-color: #aeb3cb;
+  cursor: pointer;
+  -webkit-filter: brightness(117%) grayscale(20%) saturate(80%);
+          filter: brightness(117%) grayscale(20%) saturate(80%);
 }
 
 main article:first-child .cardLg::before {
@@ -183,6 +195,10 @@ main article:first-child .cardLg div:first-child {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+main article:first-child .cardLg div:first-child span {
+  color: #63687e;
 }
 
 main article:first-child .cardLg div:nth-child(2) {
@@ -270,6 +286,13 @@ main article:nth-child(2) div .cardSm {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+main article:nth-child(2) div .cardSm:hover {
+  background-color: #aeb3cb;
+  cursor: pointer;
+  -webkit-filter: brightness(117%) grayscale(20%) saturate(80%);
+          filter: brightness(117%) grayscale(20%) saturate(80%);
 }
 
 main article:nth-child(2) div .cardSm div:first-child {
