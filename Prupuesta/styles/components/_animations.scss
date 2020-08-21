@@ -1,0 +1,21 @@
+@keyframes avanzar{
+    from{
+        transform:
+        translate(0);
+        animation-duration: 5s;
+    }
+    to{
+        transform: 
+        translate(-23px);
+        animation-duration: 5s;
+    }
+}
+
+
+@keyframes retroceder{
+    from{	
+        transform:
+        translate(23px);
+        animation-duration: 5s;
+    }
+}

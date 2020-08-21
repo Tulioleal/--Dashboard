@@ -2,10 +2,15 @@
     font-size: 14px;
 }
 
-@mixin hover_card{
-    &:hover{
-        background-color: $toggleL;
-        cursor: pointer;
-        filter: brightness(117%) grayscale(20%) saturate(80%);
-    }
+@mixin hover_card_l{
+
 }
+
+// }
+// @mixin hover_card_l{
+//     &:hover{
+//         background-color: $toggleL;
+//         cursor: pointer;
+//         filter: brightness(117%) grayscale(20%) saturate(80%);
+//     }
+// }
