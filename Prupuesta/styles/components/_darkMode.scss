@@ -1,0 +1,36 @@
+@import'variables';
+
+.darkBody{
+    background-color: $azulMO;
+    color: $blanco; 
+    &::before{
+        background-color: $azulMOBG;
+    }
+    .darkbtn{
+        background-image: $toggleD;
+        &:hover{
+            background-image: none;
+            background-color: $toggleL;
+        }
+        // &:hover{
+        //     &::after{
+    
+        //     }
+        // } 
+        &::after{
+            background-color: $azulOP; 
+        }
+    }
+    .heading{
+        color: $blanco
+    }
+    main{
+        article:first-child, article:nth-child(2){
+            .darkCard{
+                background-color: $azulOP;
+            }
+        }
+    }
+}
+
+
