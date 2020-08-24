@@ -8,16 +8,15 @@ main{
     flex-direction: column;
     justify-content: space-evenly;
     article{
-
         display: flex;
         justify-content: space-between;
     }
 
     article:first-child{
-        height: 37%;
+        height: 40%;
     
         .cardLg{
-            height: 90%;
+            height: 14em;
             width: 23%;
             padding-bottom: 3%;
             background-color: $azulGC;
@@ -31,12 +30,10 @@ main{
             flex-direction: column;
             justify-content: space-between;
 
-
-
             &:hover{
                 &::after{
                     width: 18.4%;
-                    height: 28.1%;
+                    height: 14em;
                 }
             }
 
@@ -99,36 +96,37 @@ main{
 
     article:nth-child(2){
         height: 60%;
-        padding: 1% 0 4% 0;
+        margin: 3% 0 4% 0;
 
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
 
         .heading{
             color: $azulGO;
-            padding-bottom: .5em;
+            padding-bottom: 2%;
         }
-        div {
-            height: 38%;
-            display: flex;
-            justify-content: space-between;
-
+        .row {
+            height: 40%;
+            display: grid;
+            grid-template-rows: 8.6em 8.6em;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 2.5%;
+            
             .cardSm{
-                height: 100%;
-                width: 23%;
                 border-radius: 5px;
                 background-color: $azulGC;
                 @include hover_card();
+                margin-bottom: 1.2em;
                 @include animacion();
 
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
-
-                
+                justify-content: space-between; 
 
                 div:first-child{
                     padding: 10% 12% 0%;
+                    display: flex;
+                    justify-content: space-between;
                     
                     span{
                         color: $azulGO;
@@ -145,6 +143,8 @@ main{
                 div:nth-child(2){
                     
                     padding: 0% 12% 10% ;
+                    display: flex;
+                    justify-content: space-between;
                     h2{
                         font-size: 2em;
                         height: min-content;

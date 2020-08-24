@@ -4,6 +4,7 @@
 .darkBody{
     background-color: $azulMO;
     color: $blanco; 
+
     &::before{
         background-color: $azulMOBG;
     }
@@ -29,9 +30,16 @@
         color: $blanco
     }
     main{
-        article:first-child, article:nth-child(2){
+        article:first-child{
             .darkCard{
                 background-color: $azulOP;
+            }
+        }
+        article:nth-child(2){
+            .row{
+                .darkCard{
+                    background-color: $azulOP;
+                }
             }
         }
     }

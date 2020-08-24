@@ -1,5 +1,22 @@
-@media screen and (min-width: 1050px){
-    .cardSm{
-        background-color: red;
+@media screen and (max-width: 1130px){
+    body{
+        height: 170vh;
+        main{
+            article:nth-child(2){
+                height: 100%;
+                .row{
+                    grid-template-columns: repeat(2, 1fr);
+
+                    .cardSm{
+                        &:hover{
+                            &::after{
+                                width: 39%;
+                                height: 16%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
