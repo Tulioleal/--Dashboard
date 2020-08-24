@@ -66,6 +66,14 @@
 }
 
 .darkBody .darkbtn::after {
+  content: "";
+  display: block;
+  background-color: #f5f7ff;
+  height: 72%;
+  width: 34.5%;
+  border-radius: 100%;
+  position: relative;
+  left: 5px;
   background-color: #252a41;
 }
 
@@ -90,6 +98,8 @@ body {
   color: #1e202a;
   height: 100vh;
   background-color: white;
+  -webkit-transition: .6s all ease-out;
+  transition: .6s all ease-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,10 +119,8 @@ body::before {
   position: absolute;
   background-color: #f5f7ff;
   z-index: -1;
-}
-
-body .row {
-  width: 100%;
+  -webkit-transition: .6s all ease-out;
+  transition: .6s all ease-out;
 }
 
 body .red {
@@ -140,6 +148,12 @@ body .youtube::before {
   background-color: #c4032a;
 }
 
+@media screen and (min-width: 1050px) {
+  .cardSm {
+    background-color: red;
+  }
+}
+
 header {
   height: 15%;
   width: 80%;
@@ -157,6 +171,11 @@ header div:first-child {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+header div:first-child h1 {
+  -webkit-transition: .6s all ease-out;
+  transition: .6s all ease-out;
 }
 
 header div:first-child p {
@@ -213,6 +232,8 @@ header div:nth-child(n+2) button::after {
   border-radius: 100%;
   position: relative;
   left: 28px;
+  -webkit-transition: .6s all ease-out;
+  transition: .6s all ease-out;
 }
 
 main {
@@ -251,6 +272,8 @@ main article:first-child .cardLg {
   padding-bottom: 3%;
   background-color: #f0f2fa;
   border-radius: 5px;
+  -webkit-transition: .6s all ease-out;
+  transition: .6s all ease-out;
   -ms-flex-item-align: center;
       align-self: center;
   display: -webkit-box;
@@ -276,6 +299,11 @@ main article:first-child .cardLg:hover::after {
   display: block;
   position: absolute;
   opacity: 15%;
+  width: 18.4%;
+  height: 16.4%;
+}
+
+main article:first-child .cardLg:hover::after {
   width: 18.4%;
   height: 28.1%;
 }
@@ -366,7 +394,7 @@ main article:nth-child(2) {
       justify-content: space-around;
 }
 
-main article:nth-child(2) h1 {
+main article:nth-child(2) .heading {
   color: #63687e;
   padding-bottom: .5em;
 }
@@ -386,6 +414,8 @@ main article:nth-child(2) div .cardSm {
   width: 23%;
   border-radius: 5px;
   background-color: #f0f2fa;
+  -webkit-transition: .6s all ease-out;
+  transition: .6s all ease-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -23,20 +23,18 @@ main{
             background-color: $azulGC;
             border-radius: 5px;
 
+            @include hover_card();
+            @include animacion();
+
             align-self: center;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
 
+
+
             &:hover{
-                cursor: pointer;
                 &::after{
-                    content: '';
-                    background-color: $toggleL;
-                    border-radius: 5px;
-                    display: block;
-                    position: absolute;
-                    opacity: 15%;
                     width: 18.4%;
                     height: 28.1%;
                 }
@@ -106,7 +104,7 @@ main{
         flex-direction: column;
         justify-content: space-around;
 
-        h1{
+        .heading{
             color: $azulGO;
             padding-bottom: .5em;
         }
@@ -120,25 +118,14 @@ main{
                 width: 23%;
                 border-radius: 5px;
                 background-color: $azulGC;
-                @include hover_card_l();
+                @include hover_card();
+                @include animacion();
 
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
 
-                &:hover{
-                    cursor: pointer;
-                    &::after{
-                        content: '';
-                        background-color: $toggleL;
-                        border-radius: 5px;
-                        display: block;
-                        position: absolute;
-                        opacity: 15%;
-                        width: 18.4%;
-                        height: 16.4%;
-                    }
-                }
+                
 
                 div:first-child{
                     padding: 10% 12% 0%;

@@ -12,6 +12,8 @@ body{
     color: $azulMOT;
     height: 100vh;
     background-color: $blancoLT;
+
+    @include animacion();
     
     display: flex;
     flex-direction: column;
@@ -24,9 +26,7 @@ body{
         position: absolute;
         background-color: $azulMP;
         z-index: -1;
-    }
-    .row{
-        width: 100%;
+        @include animacion();
     }
     .red{
         color: $rojoB;
@@ -48,12 +48,10 @@ body{
         &::before{
             background-color: $twitter;
         }
-        
     }
     .youtube{
         &::before{
             background-color: $youtube;
         }
-        
     }
 }

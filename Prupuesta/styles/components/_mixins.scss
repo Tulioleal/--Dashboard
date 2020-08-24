@@ -2,15 +2,22 @@
     font-size: 14px;
 }
 
-@mixin hover_card_l{
-
+@mixin hover_card{
+    &:hover{
+        cursor: pointer;
+        &::after{
+            content: '';
+            background-color: $toggleL;
+            border-radius: 5px;
+            display: block;
+            position: absolute;
+            opacity: 15%;
+            width: 18.4%;
+            height: 16.4%;
+        }
+    }
 }
 
-// }
-// @mixin hover_card_l{
-//     &:hover{
-//         background-color: $toggleL;
-//         cursor: pointer;
-//         filter: brightness(117%) grayscale(20%) saturate(80%);
-//     }
-// }
+@mixin animacion{
+    transition: .6s all ease-out;
+}
