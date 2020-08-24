@@ -1,4 +1,5 @@
 @import'variables';
+@import'mixins';
 
 .darkBody{
     background-color: $azulMO;
@@ -12,12 +13,15 @@
             background-image: none;
             background-color: $toggleL;
         }
-        // &:hover{
-        //     &::after{
-    
-        //     }
-        // } 
         &::after{
+            content: "";
+            display: block;
+            background-color: $azulMP;
+            height: 72%;
+            width: 34.5%;
+            border-radius: 100%;
+            position: relative;
+            left: 5px; //right: 5px 
             background-color: $azulOP; 
         }
     }
