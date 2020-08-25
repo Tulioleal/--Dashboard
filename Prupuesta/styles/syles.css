@@ -296,7 +296,11 @@ body .youtube::before {
 
 @media screen and (max-width: 375px) {
   body header {
-    margin-top: 10%;
+    height: 6em;
+    margin-top: 8%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   body main .row:first-child {
     -webkit-box-pack: start;
