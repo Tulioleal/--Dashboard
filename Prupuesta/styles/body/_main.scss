@@ -12,7 +12,7 @@ main{
         justify-content: space-between;
     }
 
-    article:first-child{
+    .row:first-child{
         height: 40%;
     
         .cardLg{
@@ -136,6 +136,7 @@ main{
                     }
                     img{
                         height: 20px;
+                        width: 20px;
                         align-self: center;
                     }
                 }
