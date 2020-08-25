@@ -160,6 +160,8 @@ body .youtube::before {
     margin-top: 0%;
   }
   body main article:nth-child(2) .row {
+    -ms-grid-rows: (8.6em)[4];
+        grid-template-rows: repeat(4, 8.6em);
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-gap: 5%;
