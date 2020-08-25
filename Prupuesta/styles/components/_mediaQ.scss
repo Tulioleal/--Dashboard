@@ -1,6 +1,6 @@
 @media screen and (max-width: 1130px){
     body{
-        height: 170vh;
+        height: 110vh;
         main{
             article:nth-child(2){
                 margin-top: 0%;
@@ -23,7 +23,7 @@
 }
 @media screen and (max-width: 930px){
     body{
-        height: 200vh;
+        height: 180vh;
         main{
             .row:first-child{
                 display: grid;
@@ -42,7 +42,7 @@
                 }
             }
             article:nth-child(2){
-                margin-top: 5%;
+                margin-top: 10%;
             }
         }
     }
@@ -50,7 +50,8 @@
 @media screen and (max-width: 670px){
     body{
         header{
-            height: 13%;
+            height: 10%;
+            margin-top: 5%;
             flex-direction: column;
             justify-content: space-evenly;
             div:first-child{
@@ -61,17 +62,12 @@
             }
             div:nth-child(n+2){
                 width: 100%;
-                // justify-content: space-a;
             }
         }
         main{
             .row:first-child{
-                grid-template-rows: 15em 15em;
-                grid-template-columns: repeat(2, 1fr);
                 grid-gap: 5%;
                 .cardLg{
-                    height: 11em;
-                    width: auto;
                     &:hover{
                         &::after{
                             width: 39%;
@@ -80,14 +76,14 @@
                 }
             }
             article:nth-child(2){
-                margin-top: 10%;
+                margin-top: 13%;
             }
         }
     }
 }
 @media screen and (max-width: 530px){
     body{
-        height: 300vh;
+        height: 220vh;
         &::before{
             content: '';
             width: 100%;
@@ -98,8 +94,11 @@
             @include animacion();
         }
         header{
-            height: 8%;
-            margin-top: 10%;
+            height: 5%;
+            justify-content: space-between;
+            h1{
+                font-size: 1.5em;
+            }
         }
         main{
             .row:first-child{
@@ -119,21 +118,18 @@
             }
             article:nth-child(2){
                 height: 55%;
-                margin-top: 40%;
+                padding-top: 40%;
                 .row{
                     grid-template-rows: repeat(8,6em);
                     grid-template-columns: 100%;
-                    
                     .cardSm{
                         height: 100%;
-
                         div:first-child{
                             padding: 5% 7% 0%
                         }
                         div:nth-child(2){
                             padding: 0% 7% 5%
                         }
-
                         &:hover{
                             &::after{
                                 width: 39%;
@@ -148,16 +144,15 @@
 @media screen and (max-width: 375px){
     body{
         header{
-            height: 5%;
-            h1{
-                font-size: 1.5em;
-            }
+            margin-top: 10%;
         }
         main{
             .row:first-child{
+                justify-content: flex-start;
             }
             article:nth-child(2){
-                margin-top: 50%;
+                justify-content: flex-start;
+                padding-top: 80%;
             }
         }
     }
