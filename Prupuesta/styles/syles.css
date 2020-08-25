@@ -372,6 +372,7 @@ header div:nth-child(n+2) button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  outline: none;
   cursor: pointer;
 }
 
