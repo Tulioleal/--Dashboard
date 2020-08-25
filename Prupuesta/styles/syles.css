@@ -152,12 +152,12 @@ body .youtube::before {
   background-color: #c4032a;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1130px) {
   body {
-    height: 150vh;
+    height: 170vh;
   }
   body main article:nth-child(2) {
-    height: 100%;
+    margin-top: 0%;
   }
   body main article:nth-child(2) .row {
     -ms-grid-columns: (1fr)[2];
@@ -165,7 +165,6 @@ body .youtube::before {
   }
   body main article:nth-child(2) .row .cardSm:hover::after {
     width: 39%;
-    height: 16%;
   }
 }
 
